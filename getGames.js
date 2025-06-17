@@ -4,7 +4,7 @@ const getGames = async () => {
     const browser = await puppeteer.launch({
         headless: true, // sätt false om man vill se scrapingen in action. 
         defaultViewport: null,
-        // args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
     const page = await browser.newPage();
